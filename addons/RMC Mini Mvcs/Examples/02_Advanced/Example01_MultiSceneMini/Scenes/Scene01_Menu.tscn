@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bq2rsbkshmwao"]
+
+[ext_resource type="Script" path="res://addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Scripts/Runtime/Standard/Scene01_Menu.cs" id="1_bpy8r"]
+[ext_resource type="PackedScene" uid="uid://dna2d1p3mxcw" path="res://addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Scripts/Runtime/Mini/_Features/Hud/HudView.tscn" id="2_2duo7"]
+[ext_resource type="PackedScene" uid="uid://b2xnddu6vsfy3" path="res://addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Scripts/Runtime/Mini/_Features/Menu/MenuView.tscn" id="3_6ayfo"]
+
+[node name="Scene01_Menu" type="Control" node_paths=PackedStringArray("_menuView", "_hudView")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bpy8r")
+_menuView = NodePath("MenuView")
+_hudView = NodePath("HudView")
+
+[node name="HudView" parent="." instance=ExtResource("2_2duo7")]
+layout_mode = 1
+
+[node name="MenuView" parent="." instance=ExtResource("3_6ayfo")]
+layout_mode = 1

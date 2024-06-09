@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://0l8kvaytenny"]
+
+[ext_resource type="Script" path="res://addons/RMC Mini Mvcs/Examples/01_Beginner/Example02_LoginMini/Scripts/Runtime/Standard/LoginMiniExample.cs" id="1_rhdht"]
+[ext_resource type="PackedScene" uid="uid://5he126mdpwss" path="res://addons/RMC Mini Mvcs/Examples/01_Beginner/Example02_LoginMini/Scripts/Runtime/Mini/View/LoginView.tscn" id="2_7fta1"]
+
+[node name="LoginWithMiniExample" type="Control" node_paths=PackedStringArray("_loginView")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rhdht")
+_loginView = NodePath("LoginView")
+
+[node name="LoginView" parent="." instance=ExtResource("2_7fta1")]
+layout_mode = 1

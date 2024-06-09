@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6ax1f6ah6ehf"]
+
+[ext_resource type="Script" path="res://addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Scripts/Runtime/Standard/Scene02_Game.cs" id="1_qwp3f"]
+[ext_resource type="PackedScene" uid="uid://dna2d1p3mxcw" path="res://addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Scripts/Runtime/Mini/_Features/Hud/HudView.tscn" id="2_4ra25"]
+[ext_resource type="PackedScene" uid="uid://c6d1c4q6and3y" path="res://addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Scripts/Runtime/Mini/_Features/Game/GameView.tscn" id="3_1xfal"]
+
+[node name="Scene2_Game" type="Control" node_paths=PackedStringArray("_gameView", "_hudView")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qwp3f")
+_gameView = NodePath("GameView")
+_hudView = NodePath("HudView")
+
+[node name="HudView" parent="." instance=ExtResource("2_4ra25")]
+layout_mode = 1
+
+[node name="GameView" parent="." instance=ExtResource("3_1xfal")]
+layout_mode = 1

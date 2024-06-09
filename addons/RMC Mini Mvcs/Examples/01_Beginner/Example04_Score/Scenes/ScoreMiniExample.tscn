@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtq5wgre2j65j"]
+
+[ext_resource type="Script" path="res://addons/RMC Mini Mvcs/Examples/01_Beginner/Example04_Score/Scripts/Runtime/Standard/ScoreMiniExample.cs" id="1_6cxoi"]
+[ext_resource type="PackedScene" uid="uid://dok7vwnmmpo2l" path="res://addons/RMC Mini Mvcs/Examples/01_Beginner/Example04_Score/Scripts/Runtime/Mini/View/ScoreView.tscn" id="2_f63hf"]
+
+[node name="ScoreWithMiniExample" type="Control" node_paths=PackedStringArray("_scoreView")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6cxoi")
+_scoreView = NodePath("ScoreView")
+
+[node name="ScoreView" parent="." instance=ExtResource("2_f63hf")]
+layout_mode = 1
