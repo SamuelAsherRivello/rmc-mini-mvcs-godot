@@ -1,5 +1,5 @@
 
-# RMC Mini Mvcs Framework (Godot)
+# RMC Mini Mvcs Architecture - For Godot
 
 Rivello Multimedia Consulting has multiple frameworks for Mvcs ([Mode-View-Controller-Service](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller-service)) architecture for the  [Godot Engine](https://godotengine.org/) to create your projects with confidence, performance, and scalability.
 
