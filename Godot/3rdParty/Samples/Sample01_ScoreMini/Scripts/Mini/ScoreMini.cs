@@ -1,19 +1,17 @@
+using Godot;
 using RMC.Core.Architectures.Mini.Controller;
 using RMC.Core.Architectures.Mini.Locators;
 using RMC.Core.Architectures.Mini.Model;
-using RMC.Core.Architectures.Mini.Samples.UGS.Mini.Controller;
-using RMC.Core.Architectures.Mini.Samples.UGS.Mini.Model;
-using RMC.Core.Architectures.Mini.Samples.UGS.Mini.Service;
-using RMC.Core.Architectures.Mini.Samples.UGS.Mini.View;
+using RMC.Core.Architectures.Mini.Samples.ScoreMini.Mini.View;
 using RMC.Core.Architectures.Mini.Service;
 using RMC.Core.Architectures.Mini.View;
 
-namespace RMC.Core.Architectures.Mini.Samples.UGS.Mini
+namespace RMC.Core.Architectures.Mini.Samples.ScoreMini.Mini
 {
     /// <summary>
     /// See <see cref="MiniMvcs{TContext,TModel,TView,TController,TService}"/>
     /// </summary>
-    public class TestMiniMvcs: MiniMvcs
+    public class ScoreMini: MiniMvcs
             <Context, 
                 IModel, 
                 IView, 
@@ -21,17 +19,20 @@ namespace RMC.Core.Architectures.Mini.Samples.UGS.Mini
                 IService>
     {
         
-        //  Fields ----------------------------------------
-
-        
         //  Properties ------------------------------------
         
         
+        //  Fields ----------------------------------------
+        private ScoreView _scoreView;
+
+        
         //  Initialization  -------------------------------
-        public override async void Initialize()
+        public override void Initialize()
         {
             if (!IsInitialized)
             {
+                GD.Print("ScoreMini.Initialized()");
+                
                 _isInitialized = true;
                 
                 _context = new Context();
@@ -43,37 +44,37 @@ namespace RMC.Core.Architectures.Mini.Samples.UGS.Mini
                 _serviceLocator = new Locator<IService>();
        
                 // Model
-                TestModel testModel = new TestModel();
-                testModel.Initialize(_context); //Added to locator inside
+                ScoreModel scoreModel = new ScoreModel();
+                scoreModel.Initialize(_context); //Added to locator inside
                 
                 // View
-                TestView testView = new TestView();
-                ViewLocator.AddItem(testView);
-                testView.Initialize(_context);
+                //(Passed in from main scene)
+                _scoreView.Initialize(_context);
                 
                 // Service
-                TestService testService = new TestService();
-                ServiceLocator.AddItem(testService);
-                testService.Initialize(_context);
+                ScoreService scoreService = new ScoreService();
+                ServiceLocator.AddItem(scoreService);
+                scoreService.Initialize(_context);
                 
                 // Service
-                TestController testController = new TestController
+                ScoreController scoreController = new ScoreController
                 (
-                    testModel,
-                    testView,
-                    testService
+                    scoreModel,
+                    _scoreView,
+                    scoreService
                 );
                 
-                ControllerLocator.AddItem(testController);
-                testController.Initialize(_context);
-
-                // Do stuff....
-                testView.OnUserAction.Invoke(false, true);
+                ControllerLocator.AddItem(scoreController);
+                scoreController.Initialize(_context);
                 
             }
         }
 
         
         //  Methods  -------------------------------
+        public void AddView(ScoreView scoreView)
+        {
+            _scoreView = scoreView;
+        }
     }
 }

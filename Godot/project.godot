@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Godot"
-run/main_scene="res://3rdParty/Samples/RMC/Mini/Core/Architectures/Sample01_TestMiniMvcs/Standard/Scenes/TestMiniMvcsScene.tscn"
-config/features=PackedStringArray("4.2", "GL Compatibility")
+run/main_scene="res://3rdParty/Samples/Sample01_ScoreMini/Scenes/Main.tscn"
+config/features=PackedStringArray("4.2", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [dotnet]

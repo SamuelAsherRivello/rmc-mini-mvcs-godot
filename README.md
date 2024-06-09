@@ -5,10 +5,20 @@ Rivello Multimedia Consulting has multiple frameworks for MVC in Godot.
 
 This is a WIP port of the library below.
 
+### Godot Samples
+
+#### Sample01_ScoreMini
+<img src="./Godot/3rdParty/Samples/Sample01_ScoreMini/Documentation/Diagram.png" width = "400px" >
+<img src="./Godot/3rdParty/Samples/Sample01_ScoreMini/Documentation/Result.png" width = "400px" >
+
+
+<BR>
+<BR>
+<BR>
 
 # RMC Frameworks (Unity)
 
-# RMC Mini MVCS
+## RMC Mini MVCS
 
 Mini MVCS is a custom Unity library framework embracing the [MVCS architecture](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller).
 
