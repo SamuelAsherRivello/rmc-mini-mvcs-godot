@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtdah68a01g6w"]
+
+[ext_resource type="Script" path="res://3rdParty/Samples/RMC/Mini/Core/Architectures/Sample01_TestMiniMvcs/Standard/Scenes/TestMiniMvcsScene.cs" id="1_v35va"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_v35va")
