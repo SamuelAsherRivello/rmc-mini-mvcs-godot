@@ -1,9 +1,11 @@
 
-# RMC Frameworks (Godot)
+# RMC Mini Mvcs Framework (Godot)
 
-Rivello Multimedia Consulting has multiple frameworks for MVC in Godot.
+Rivello Multimedia Consulting has multiple frameworks for Mvcs ([Mode-View-Controller-Service](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller-service)) architecture for the  [Godot Engine](https://godotengine.org/) to create your projects with confidence, performance, and scalability.
 
-This is a work-in-progress (WIP) port of the successful [https://github.com/SamuelAsherRivello/rmc-mini-mvcs/](https://github.com/SamuelAsherRivello/rmc-mini-mvcs/) **Library** featured in the updated [https://www.youtube.com/watch?v=ulclbvLL9A4](https://www.youtube.com/watch?v=ulclbvLL9A4) **Udemy Course**.
+This is a work-in-progress (WIP) port the ...
+* **Unity Library** - [https://github.com/SamuelAsherRivello/rmc-mini-mvcs/](https://github.com/SamuelAsherRivello/rmc-mini-mvcs/) 
+* **Online Course** - [https://www.youtube.com/watch?v=ulclbvLL9A4](https://www.youtube.com/watch?v=ulclbvLL9A4)
 
 -------
 
