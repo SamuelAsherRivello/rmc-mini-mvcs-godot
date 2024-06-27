@@ -1,5 +1,4 @@
-﻿using Godot;
-using RMC.Mini.Controller.Commands;
+﻿using RMC.Mini.Controller.Commands;
 using RMC.Mini.Model;
 
 //Keep As:RMC.Mini
@@ -24,7 +23,6 @@ namespace RMC.Mini
 		public BaseContext()
 		{
 			_modelLocator = new Locator<IModel>();
-			GD.Print("Just created the model locator as " + _modelLocator);
 			_commandManager = new CommandManager(this);
 		}
 		   

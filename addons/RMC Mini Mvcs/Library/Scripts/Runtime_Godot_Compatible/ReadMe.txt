@@ -1,11 +1,8 @@
+This folder is godot compatible. 
 
 
-INFO:
+NOTE:
 
-* This folder is Godot compatible. 
-
-* It may be ported to Godot or other engines.
-
-INSTRUCTIONS: 
-
-* Edit this within this repo as needed
+* This is a manual copy/paste from the Unity version at https://github.com/SamuelAsherRivello/rmc-mini-mvcs/
+* Feel free to edit it here
+* Periodically it may be copyed from here back to the unity repo for parity

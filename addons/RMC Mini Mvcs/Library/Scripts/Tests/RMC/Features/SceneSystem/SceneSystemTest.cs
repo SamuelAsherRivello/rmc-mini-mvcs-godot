@@ -17,7 +17,17 @@ namespace RMC.Mini.Features
         /// The MiniMvcs subclass using SceneSystemModel,
         /// DummyView, SceneSystemController, and DummyService
         /// </summary>
-        public class SampleSceneSystemMvcs : MiniMvcs<IContext, SceneSystemModel, DummyView, SceneSystemController, DummyService>
+        public class SampleSceneSystemMvcs : MiniMvcs<
+            IContext, 
+            SceneSystemModel, 
+            
+            //No view needed
+            DummyView, 
+            
+            SceneSystemController, 
+            
+            //No service needed
+            DummyService>
         {
             public override void Initialize()
             {
@@ -25,7 +35,7 @@ namespace RMC.Mini.Features
                 {
                     // Context
                     _context = new Context();
-                
+                    
                     // Model
                     SceneSystemModel model = new SceneSystemModel();
          
@@ -76,6 +86,31 @@ namespace RMC.Mini.Features
 
             // Assert
             AssertBool(_mvcs.IsInitialized).IsTrue();
+            
+        }
+        
+        [TestCase]
+        public void ModelLocator_IsNull_BeforeInitialize()
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
+            AssertObject(_mvcs.ModelLocator).IsNull();
+        }
+
+        
+        [TestCase]
+        public void ModelLocator_IsNotNull_AfterInitialize()
+        {
+            // Arrange
+            _mvcs.Initialize();
+
+            // Act
+
+            // Assert
+            AssertObject(_mvcs.ModelLocator).IsNotNull();
         }
 
         [TestCase]
@@ -85,8 +120,6 @@ namespace RMC.Mini.Features
             _mvcs.Initialize();
 
             // Act
-            GD.Print(("what1: " + _mvcs));
-            GD.Print(("what2: " + _mvcs.ModelLocator));
             bool hasItem = _mvcs.ModelLocator.HasItem<SceneSystemModel>();
 
             // Assert

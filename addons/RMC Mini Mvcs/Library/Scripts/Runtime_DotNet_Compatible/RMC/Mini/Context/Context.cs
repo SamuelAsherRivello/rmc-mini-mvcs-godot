@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 
 //Keep As:RMC.Mini
 namespace RMC.Mini

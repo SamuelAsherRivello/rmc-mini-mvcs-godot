@@ -1,6 +1,4 @@
 using System;
-using System.Diagnostics;
-using Godot;
 using RMC.Mini.Controller;
 using RMC.Mini.Model;
 using RMC.Mini.Service;
@@ -57,14 +55,7 @@ namespace RMC.Mini
         /// The ModelLocator is the only ModelLocator that already exists in the
         /// Context. So we fetch it from there.
         /// </summary>
-        public Locator<TModel> ModelLocator {
-            get
-            {
-                GD.Print("a: " + _context);
-                GD.Print("ab: " + _context.ModelLocator);
-                return 
-                    _context.ModelLocator as Locator<TModel>;
-            } }
+        public Locator<TModel> ModelLocator { get { return _context.ModelLocator as Locator<TModel>;} }
         public Locator<TView> ViewLocator { get { return _viewLocator;} }
         public Locator<TController> ControllerLocator { get { return _controllerLocator;} }
         public Locator<TService> ServiceLocator { get { return _serviceLocator;} }
@@ -75,7 +66,6 @@ namespace RMC.Mini
             // Model
             // ...ModelLocator is already fetched from context
             
-            GD.Print("found in const: " + ModelLocator);
             // Others
             _viewLocator = new Locator<TView>();
             _controllerLocator = new Locator<TController>();

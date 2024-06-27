@@ -29,8 +29,8 @@ namespace RMC.Mini
 
     public class Locator<TBase> : Locator
     {
-        public class LocatorItemEvent : RmcEvent<TBase> {}
-        public readonly LocatorItemEvent OnItemAdded = new LocatorItemEvent();
+        public class LocatorItemUnityEvent : RmcEvent<TBase> {}
+        public readonly LocatorItemUnityEvent OnItemAdded = new LocatorItemUnityEvent();
 
         private Dictionary<Type, Dictionary<string, TBase>> _items = new Dictionary<Type, Dictionary<string, TBase>>();
 

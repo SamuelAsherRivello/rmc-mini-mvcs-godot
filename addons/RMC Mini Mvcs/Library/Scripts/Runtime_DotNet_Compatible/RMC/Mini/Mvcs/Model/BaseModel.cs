@@ -1,5 +1,4 @@
 using System;
-using Godot;
 
 namespace RMC.Mini.Model
 {
@@ -33,7 +32,6 @@ namespace RMC.Mini.Model
                 
                 // Register Me
                 Context.ModelLocator.AddItem(this);
-                GD.Print("added here: " + Context.ModelLocator);
             }
         }
 

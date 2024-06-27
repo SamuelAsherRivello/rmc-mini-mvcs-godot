@@ -1,4 +1,7 @@
-﻿
+﻿#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 //Keep As:RMC.Mini
 namespace RMC.Mini
 {
