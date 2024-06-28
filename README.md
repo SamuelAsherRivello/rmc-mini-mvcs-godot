@@ -16,7 +16,7 @@ Create your projects with confidence, performance, and scalability.
 
 * **Does NOT require** any autoload, interface, nor baseclass. 
 * **Compatible with** nodes, resources, and classes.
-* **Compatible with** GDScript, C#, and C++.
+* **Compatible with** GDScript, C#, and C++
 
 <BR>
 <BR>
@@ -61,19 +61,19 @@ Create your projects with confidence, performance, and scalability.
 
 | Screenshot | Diagram |
 |---|---|
-| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example01_Clock/Documentation/Screenshot.png" width="200"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example01_Clock/Documentation//Diagram.png" width="200"/> |
+| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example01_Clock/Documentation/Screenshot.png" width="300"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example01_Clock/Documentation//Diagram.png" width="300"/> |
 
 #### Example01_Clock
 
 | Screenshot | Diagram |
 |---|---|
-| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example02_LoginMini/Documentation/Screenshot.png" width="200"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example02_LoginMini/Documentation//Diagram.png" width="200"/> |
+| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example02_LoginMini/Documentation/Screenshot.png" width="300"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example02_LoginMini/Documentation//Diagram.png" width="300"/> |
 
 #### Example04_Score
 
 | Screenshot | Diagram |
 |---|---|
-| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example04_Score/Documentation/Screenshot.png" width="200"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example04_Score/Documentation/Diagram.png" width="200"/> |
+| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example04_Score/Documentation/Screenshot.png" width="300"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example04_Score/Documentation/Diagram.png" width="300"/> |
 
 
 ### (Advanced)
@@ -82,7 +82,7 @@ Create your projects with confidence, performance, and scalability.
 
 | Screenshot | Diagram |
 |---|---|
-| <img src="./addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Documentation/Screenshot.png" width="200"/> | <img src="./addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Documentation/Diagram.png" width="200"/> |
+| <img src="./addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Documentation/Screenshot.png" width="300"/> | <img src="./addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Documentation/Diagram.png" width="300"/> |
 
 
 <BR>
@@ -90,11 +90,9 @@ Create your projects with confidence, performance, and scalability.
 
 ## Resources
 
-The new Godot Engine port is based on the successful Unity library.
-
-* **Unity Library** - [MVC Architecture For Unity - Source Code](https://github.com/SamuelAsherRivello/rmc-mini-mvcs/) 
-* **Online Course** - [MVC Architecture For Unity - Online Course](https://www.youtube.com/watch?v=ulclbvLL9A4)
-
+* Samuel Asher Rivello's Godot Portfolio - <a href="http://www.samuelasherrivello.com/best-practices">Godot — Articles, Repos, Tips</a>
+* Samuel Asher Rivello's Medium Article - <a href="https://sam-16930.medium.com/unity-project-structure-a694792cefed">Unity — Project Structure Best Practices</a>
+* Samuel Asher Rivello's Medium Article - <a href="https://sam-16930.medium.com/coding-standards-in-c-39aefee92db8">Unity — C# Coding Standards</a>
 
 <BR>
 <BR>
