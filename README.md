@@ -27,8 +27,9 @@ Create your projects with confidence, performance, and scalability.
 1. Create/open a Godot Project
 1. Complete the `Prerequisites` steps from [Godot C# Basics](https://docs.godotengine.org/en/stable/tutorials/scripting/c_sharp/c_sharp_basics.html)
 1. Create/open folder `[ProjectName]/addons/`
-1. Install the dependencies:
-    * [rmc-mingleton](https://github.com/SamuelAsherRivello/rmc-mingleton)
+1. Install any dependencies
+    * **Optional**: [gdUnit4](https://github.com/MikeSchulze/gdUnit4) - Add if you want to run RMC's included unit tests. Project compiles with or without this plugin
+    * **Required**: [rmc-mingleton](https://github.com/SamuelAsherRivello/rmc-mingleton) - Project requires this core functionality
 1. Copy folder from `[RepoName]/addons/[PluginName]` to `[ProjectName]/addons/[PluginName]`
 1. Create the C# Solution via `Godot Menu → Project → Tools → C# → Create C# Solution`
 1. Build the C# Solution via (🔨) Icon in upper right of editor (or Control-B)
