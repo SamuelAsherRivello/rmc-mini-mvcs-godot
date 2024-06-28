@@ -19,8 +19,21 @@ Create your projects with confidence, performance, and scalability.
 * **Compatible with** GDScript, C#, and C++.
 
 <BR>
+<BR>
 
-**Getting Started**
+# Table of Contents
+
+1. [Getting Started](#getting-started)
+1. [Samples](#samples)
+1. [Resources](#resources)
+1. [Credits](#credits)
+
+
+<BR>
+<BR>
+
+## Getting Started
+
 1. Download this repo (*.zip or *.git)
 1. Save repo as `[RepoName]`
 1. Download `DOTNET` version of the [Godot Engine](https://godotengine.org/)
@@ -36,18 +49,8 @@ Create your projects with confidence, performance, and scalability.
 1. Activate the plugin via `Godot Menu → Project → Project Settings → Plugins → [PluginName] → Enabled`
 1. Enjoy!
 
-<BR>
-
-# Table of Contents
-
-1. [Samples](#samples)
-1. [Resources](#resources)
-1. [Credits](#credits)
 
 <BR>
-
----
-
 <BR>
 
 ## Samples
@@ -82,15 +85,10 @@ Create your projects with confidence, performance, and scalability.
 | <img src="./addons/RMC Mini Mvcs/Samples/02_Advanced/Example01_MultiSceneMini/Documentation/Screenshot.png" width="200"/> | <img src="./addons/RMC Mini Mvcs/Samples/02_Advanced/Example01_MultiSceneMini/Documentation/Diagram.png" width="200"/> |
 
 
-
-
+<BR>
 <BR>
 
----
-
-<BR>
-
-### Resources
+## Resources
 
 The new Godot Engine port is based on the successful Unity library.
 
@@ -99,14 +97,10 @@ The new Godot Engine port is based on the successful Unity library.
 
 
 <BR>
-
----
-
 <BR>
 
 
-
-### Credits
+## Credits
 
 **Creator**
 
