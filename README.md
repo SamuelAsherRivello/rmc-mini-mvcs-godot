@@ -16,7 +16,7 @@ Create your projects with confidence, performance, and scalability.
 
 * **Does NOT require** any autoload, interface, nor baseclass. 
 * **Compatible with** nodes, resources, and classes.
-* **Compatible with** GDScript, C#, and C++.
+* **Compatible with** GDScript, C#, and C++
 
 <BR>
 <BR>
