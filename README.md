@@ -90,11 +90,9 @@ Create your projects with confidence, performance, and scalability.
 
 ## Resources
 
-The new Godot Engine port is based on the successful Unity library.
-
-* **Unity Library** - [MVC Architecture For Unity - Source Code](https://github.com/SamuelAsherRivello/rmc-mini-mvcs/) 
-* **Online Course** - [MVC Architecture For Unity - Online Course](https://www.youtube.com/watch?v=ulclbvLL9A4)
-
+* Samuel Asher Rivello's Godot Portfolio - <a href="http://www.samuelasherrivello.com/best-practices">Godot — Articles, Repos, Tips</a>
+* Samuel Asher Rivello's Medium Article - <a href="https://sam-16930.medium.com/unity-project-structure-a694792cefed">Unity — Project Structure Best Practices</a>
+* Samuel Asher Rivello's Medium Article - <a href="https://sam-16930.medium.com/coding-standards-in-c-39aefee92db8">Unity — C# Coding Standards</a>
 
 <BR>
 <BR>
