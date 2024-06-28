@@ -61,19 +61,19 @@ Create your projects with confidence, performance, and scalability.
 
 | Screenshot | Diagram |
 |---|---|
-| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example01_Clock/Documentation/Screenshot.png" width="200"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example01_Clock/Documentation//Diagram.png" width="200"/> |
+| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example01_Clock/Documentation/Screenshot.png" width="300"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example01_Clock/Documentation//Diagram.png" width="300"/> |
 
 #### Example01_Clock
 
 | Screenshot | Diagram |
 |---|---|
-| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example02_LoginMini/Documentation/Screenshot.png" width="200"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example02_LoginMini/Documentation//Diagram.png" width="200"/> |
+| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example02_LoginMini/Documentation/Screenshot.png" width="300"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example02_LoginMini/Documentation//Diagram.png" width="300"/> |
 
 #### Example04_Score
 
 | Screenshot | Diagram |
 |---|---|
-| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example04_Score/Documentation/Screenshot.png" width="200"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example04_Score/Documentation/Diagram.png" width="200"/> |
+| <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example04_Score/Documentation/Screenshot.png" width="300"/> | <img src="./addons/RMC Mini Mvcs/Examples/01_Beginner/Example04_Score/Documentation/Diagram.png" width="300"/> |
 
 
 ### (Advanced)
@@ -82,7 +82,7 @@ Create your projects with confidence, performance, and scalability.
 
 | Screenshot | Diagram |
 |---|---|
-| <img src="./addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Documentation/Screenshot.png" width="200"/> | <img src="./addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Documentation/Diagram.png" width="200"/> |
+| <img src="./addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Documentation/Screenshot.png" width="300"/> | <img src="./addons/RMC Mini Mvcs/Examples/02_Advanced/Example01_MultiSceneMini/Documentation/Diagram.png" width="300"/> |
 
 
 <BR>
