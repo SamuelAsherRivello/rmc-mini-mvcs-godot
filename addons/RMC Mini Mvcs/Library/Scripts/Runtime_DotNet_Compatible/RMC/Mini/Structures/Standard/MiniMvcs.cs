@@ -28,10 +28,10 @@ namespace RMC.Mini
             TService> 
     
         where  TContext : IContext 
-        where TModel : IModel 
-        where TView : IView
-        where TController : IController 
-        where TService : IService 
+        where TModel : class, IModel 
+        where TView : class, IView
+        where TController : class, IController 
+        where TService : class, IService 
     
     {
 
@@ -49,8 +49,15 @@ namespace RMC.Mini
 
 
         public bool IsInitialized { get { return _isInitialized;} }
-        public TContext Context { get { return _context;} }
-        
+
+        public TContext Context
+        {
+            get
+            {
+                return _context;
+            }
+        }
+
         /// <summary>
         /// The ModelLocator is the only ModelLocator that already exists in the
         /// Context. So we fetch it from there.
