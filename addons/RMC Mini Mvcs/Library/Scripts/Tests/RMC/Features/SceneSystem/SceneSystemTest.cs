@@ -97,6 +97,7 @@ namespace RMC.Mini.Features
             // Act
 
             // Assert
+            AssertObject(_mvcs).IsNotNull();
             AssertObject(_mvcs.ModelLocator).IsNull();
         }
 
