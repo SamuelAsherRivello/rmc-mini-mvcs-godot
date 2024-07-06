@@ -1,5 +1,4 @@
 using System;
-using Godot;
 
 namespace RMC.Mini.Model
 {
@@ -33,7 +32,6 @@ namespace RMC.Mini.Model
                 
                 // Register Me
                 Context.ModelLocator.AddItem(this);
-                GD.Print("added to modellocator");
             }
         }
 
@@ -45,8 +43,15 @@ namespace RMC.Mini.Model
             }
         }
         
+        //  Dispose Methods --------------------------------
+        public virtual void Dispose()
+        {
+            // Optional: Handle any cleanup here...
+        }
+        
+        
         //  Methods ---------------------------------------
-
+        
 
         //  Event Handlers --------------------------------
 

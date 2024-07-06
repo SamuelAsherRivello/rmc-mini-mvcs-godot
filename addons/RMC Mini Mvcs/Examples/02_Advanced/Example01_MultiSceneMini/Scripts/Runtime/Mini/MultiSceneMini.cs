@@ -90,5 +90,12 @@ namespace RMC.Mini.Examples.MultiScene.Mini
             FeatureBuilder.RemoveFeature<TFeature>(key);
         }
         
+        public void RemoveAndDisposeFeature<TFeature>(string key = "") where TFeature : IFeature
+        {
+            RequireIsInitialized();
+
+            FeatureBuilder.RemoveAndDisposeFeature<TFeature>(key);
+        }
+        
     }
 }

@@ -43,7 +43,8 @@ namespace RMC.Mini.Features
                 
                     // Controller
                     SceneSystemController controller = new SceneSystemController(model, new DummyView(), new DummyService());
-                
+                    ControllerLocator.AddItem(controller);
+                    
                     // Initialize
                     model.Initialize(_context); //Added to locator inside
                     controller.Initialize(_context);
@@ -101,6 +102,18 @@ namespace RMC.Mini.Features
             AssertObject(_mvcs.ModelLocator).IsNull();
         }
 
+        [TestCase]
+        public void ContextModelLocator_IsNotNull_AfterInitialize()
+        {
+            // Arrange
+            _mvcs.Initialize();
+
+            // Act
+
+            // Assert
+            AssertObject(_mvcs.Context.ModelLocator).IsNotNull();
+        }
+        
         
         [TestCase]
         public void ModelLocator_IsNotNull_AfterInitialize()
@@ -121,6 +134,7 @@ namespace RMC.Mini.Features
             _mvcs.Initialize();
 
             // Act
+            AssertObject(_mvcs.ModelLocator).IsNotNull();
             bool hasItem = _mvcs.ModelLocator.HasItem<SceneSystemModel>();
 
             // Assert
@@ -134,6 +148,7 @@ namespace RMC.Mini.Features
             _mvcs.Initialize();
 
             // Act
+            AssertObject(_mvcs.ControllerLocator).IsNotNull();
             bool hasItem = _mvcs.ControllerLocator.HasItem<SceneSystemController>();
 
             // Assert

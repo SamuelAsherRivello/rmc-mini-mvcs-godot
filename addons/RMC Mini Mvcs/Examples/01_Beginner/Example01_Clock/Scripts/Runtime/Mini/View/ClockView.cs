@@ -53,5 +53,9 @@ namespace RMC.Mini.Examples.Clock.Mini.View
             GD.Print($"View's OnTimeChangedCommand({timeChangedCommand.CurrentValue})");
         }
 
+        public void Dispose()
+        {
+            // Optional: Handle any cleanup here...
+        }
     }
 }

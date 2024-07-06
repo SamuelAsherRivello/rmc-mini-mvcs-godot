@@ -42,9 +42,12 @@ namespace RMC.Mini.Examples.MultiScene.Mini.Feature.Game
             
             if (MiniMvcs.ControllerLocator.HasItem<GameController>())
             {
-                MiniMvcs.ControllerLocator.GetItem<GameController>().Dispose();
-                MiniMvcs.ControllerLocator.RemoveItem<GameController>();
-                MiniMvcs.ViewLocator.RemoveItem<GameView>();
+                MiniMvcs.ControllerLocator.RemoveAndDisposeItem<GameController>();
+            }
+            
+            if (MiniMvcs.ViewLocator.HasItem<GameView>())
+            {
+                MiniMvcs.ViewLocator.RemoveAndDisposeItem<GameView>();
             }
         }
 

@@ -37,9 +37,12 @@ namespace RMC.Mini.Examples.MultiScene.Mini.Feature.Hud
             
             if (MiniMvcs.ControllerLocator.HasItem<HudController>())
             {
-                MiniMvcs.ControllerLocator.GetItem<HudController>().Dispose();
-                MiniMvcs.ControllerLocator.RemoveItem<HudController>();
-                MiniMvcs.ViewLocator.RemoveItem<HudView>();
+                MiniMvcs.ControllerLocator.RemoveAndDisposeItem<HudController>();
+            }
+            
+            if (MiniMvcs.ViewLocator.HasItem<HudView>())
+            {
+                MiniMvcs.ViewLocator.RemoveAndDisposeItem<HudView>();
             }
         }
     }

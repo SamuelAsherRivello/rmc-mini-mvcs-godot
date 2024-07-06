@@ -77,10 +77,10 @@ namespace RMC.Mini.Examples.MultiScene.Standard
             MultiSceneMini mini = Mingleton.Instance.GetOrCreateAsClass<MultiSceneMini>();
             
             //  Scene-Specific ----------------------------
-            mini.RemoveFeature<GameFeature>();
+            mini.RemoveAndDisposeFeature<GameFeature>();
             
             //  Scene-Agnostic ----------------------------
-            mini.RemoveFeature<HudFeature>();
+            mini.RemoveAndDisposeFeature<HudFeature>();
         }
         
         //  Event Handlers --------------------------------
